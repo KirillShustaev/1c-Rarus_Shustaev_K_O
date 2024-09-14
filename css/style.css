@@ -572,7 +572,7 @@ input[type=search]::-webkit-search-results-decoration {
 
 .nav {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   align-items: center;
 }
 .nav__link {
