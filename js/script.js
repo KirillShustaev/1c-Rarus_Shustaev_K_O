@@ -17,4 +17,9 @@ swiper = new Swiper('.nav', {
 	navigation: {
 		nextEl: '.nav__next'
 		},
+    // breakpoints: {
+    //     0: {
+    //         spaceBetween: 35
+    //     }
+    // }
   })
