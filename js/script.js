@@ -12,14 +12,16 @@ navLink.forEach(elem => {
 swiper = new Swiper('.nav', {
 	slidesPerGroup: 1,
     slidesPerView: "auto",
-	spaceBetween: 37,
 	loop: true,
 	navigation: {
 		nextEl: '.nav__next'
 		},
-    // breakpoints: {
-    //     0: {
-    //         spaceBetween: 35
-    //     }
-    // }
+    breakpoints: {
+        0: {
+            spaceBetween: 20
+        },
+        768: {
+            spaceBetween: 37
+        }
+    }
   })

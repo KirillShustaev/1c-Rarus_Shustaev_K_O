@@ -22,32 +22,47 @@
         <div class="container header__container flex">
             <div class="header__main flex">
                 <a href="#">ЭЛЕКТРОСИТИ</a>
+                <button class="header__burger burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                </button>
                 <form class="header__search flex">
                         <button></button>
                         <input type="search" class="header__inputSearch" placeholder="Поиск среди товаров">
                 </form>
                 <ul class="flex">
-                    <li>
+                    <li class="header__choiceItem header__choiceItem_acc">
                         <a class="header__choiceLink flex" href="#">
                             <span class="header__choiceIcon header__choiceIcon_name"></span>
                             <span>Анастасия</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="header__choiceItem header__choiceItem_pay">
                         <a class="header__choiceLink flex" href="#">
                             <span class="header__choiceIcon header__choiceIcon_pay"></span>
                             <span>Покупки</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="header__choiceItem header__choiceItem_like">
                         <a class="header__choiceLink flex" href="#">
                             <span class="header__choiceIcon header__choiceIcon_like"></span>
                             <span>Избранное</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="header__choiceItem header__choiceItem_basket">
                         <a class="header__choiceLink flex" href="#">
                             <span class="header__choiceIcon header__choiceIcon_basket"></span>
+                            <span>Корзина</span>
+                        </a>
+                    </li>
+                    <li class="header__choiceItem header__choiceItem_city">
+                        <a class="header__choiceLink flex" href="#">
+                            <span class="header__choiceIcon header__choiceIcon_city"></span>
+                            <span>Избранное</span>
+                        </a>
+                    </li>
+                    <li class="header__choiceItem header__choiceItem_geo">
+                        <a class="header__choiceLink flex" href="#">
+                            <span class="header__choiceIcon header__choiceIcon_geo"></span>
                             <span>Корзина</span>
                         </a>
                     </li>

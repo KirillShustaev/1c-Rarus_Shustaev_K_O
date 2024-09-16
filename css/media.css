@@ -192,3 +192,200 @@
     line-height: max(2.60vw, 20px);
   }
 }
+
+@media (max-width: 767px) {
+  .container {
+    padding-right: max(3.13vw, 10px);
+    padding-left: max(3.13vw, 10px);
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__main > a {
+    order: -1;
+    margin-right: max(3.13vw, 10px);
+    font-size: max(5.31vw, 17px);
+    line-height: max(6.56vw, 21px);
+    letter-spacing: .25rem;
+  }
+
+  .header ul:has(.header__choiceLink) {
+    justify-content: flex-end;
+    order: 0;
+    min-width: 45%;
+
+    column-gap: 2rem;
+  }
+
+  .header__choiceItem_city,
+  .header__choiceItem_geo {
+    display: block;
+  }
+
+  .header__choiceItem_acc,
+  .header__choiceItem_basket,
+  .header__choiceItem_like {
+    display: none;
+  }
+
+  .header__search {
+    order: 2;
+    width: max(81.56vw, 261px);
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .header__main {
+    flex-wrap: wrap;
+    padding-top: 2.1rem;
+    padding-bottom: 2rem;
+
+    row-gap: 2.4rem;
+  }
+
+  .burger {
+    display: flex;
+    order: 1;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .header__choiceIcon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .header__search button {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .header__inputSearch,
+  .header__inputSearch::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .hero__main {
+    min-height: max(52.81vw, 169px);
+    border-radius: .6rem;
+
+    padding-block: 0 max(3.13vw, 10px);
+    padding-inline: max(6.25vw, 20px);
+    column-gap: max(9.38vw, 30px);
+  }
+
+  .hero__title {
+    margin-bottom: max(.63vw, 2px);
+    font-size: max(5.31vw, 17px);
+    line-height: max(6.25vw, 20px);
+  }
+
+  .hero__descr {
+    font-size: max(2.81vw, 9px);
+    line-height: 20px;
+  }
+
+  .hero__titleBlock {
+    max-width: max(35.94vw, 115px);
+  }
+
+  .hero__img {
+    width: max(37.50vw, 120px);
+    height: max(29.06vw, 93px);
+  }
+
+  .descr h2 {
+    margin-bottom: max(4.38vw, 14px);
+    font-size: max(7.50vw, 24px);
+    line-height: max(8.75vw, 28px);
+  }
+
+  .hero {
+    margin-bottom: 2.2rem;
+  }
+
+  .descr span {
+    font-size: max(5.63vw, 18px);
+    line-height: max(6.56vw, 21px);
+  }
+
+  .descr__container p {
+    font-size: max(5.00vw, 16px);
+    line-height: max(5.94vw, 19px);
+  }
+
+  .descr {
+    margin-bottom: max(15.00vw, 48px);
+  }
+
+  .footer {
+    margin-bottom: 0;
+
+    padding-block: max(7.50vw, 24px);
+  }
+
+  .footer__contactBlock > ul {
+    column-gap: max(7.81vw, 25px);
+  }
+
+  .footer__contactBlock > ul a {
+    font-size: max(4.38vw, 14px);
+    line-height: max(6.88vw, 22px);
+  }
+
+  .footer__contactBlock {
+    max-width: 100%;
+
+    row-gap: max(5.63vw, 18px);
+  }
+
+  .footer__socBlock > ul {
+    max-width: 100%;
+    transform: translate(0);
+  }
+
+  .footer__socBlock {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+
+    row-gap: max(7.50vw, 24px);
+  }
+
+  .footer__contact a {
+    padding-left: max(8.13vw, 26px);
+    font-size: max(4.38vw, 14px);
+    line-height: max(6.88vw, 22px);
+  }
+
+  .footer__contact {
+    flex-direction: column;
+
+    row-gap: max(2.50vw, 8px);
+  }
+
+  .footer__contact a::after {
+    width: max(5.63vw, 18px);
+    height: max(5.63vw, 18px);
+  }
+
+  .footer__socBlock span {
+    font-size: max(3.75vw, 12px);
+    line-height: max(5.63vw, 18px);
+  }
+
+  .footer__soc {
+    width: max(9.38vw, 30px);
+    height: max(9.38vw, 30px);
+  }
+
+  .footer__soc svg {
+    width: max(5.63vw, 18px);
+    height: max(5.63vw, 18px);
+  }
+}
+

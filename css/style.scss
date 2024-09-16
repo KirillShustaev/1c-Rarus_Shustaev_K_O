@@ -142,13 +142,20 @@
     row-gap: .2rem;
   }
 
+  &__choiceItem {
+    &_city,
+    &_geo {
+      display: none;
+    }
+  }
+
   &__choiceIcon {
     display: block;
     width: 1.8rem;
     height: 1.8rem;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 
     &_name {
       background-image: url(../img/name.svg);
@@ -164,6 +171,14 @@
 
     &_basket {
       background-image: url(../img/basket.svg);
+    }
+
+    &_city {
+      background-image: url(../img/city.svg);
+    }
+
+    &_geo {
+      background-image: url(../img/geo.svg);
     }
   }
 }
@@ -414,6 +429,40 @@
 
       fill: #8d8d8d;
     }
+  }
+}
+
+.burger {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: max(7.50vw, 24px);
+  max-width: 5.3rem;
+  height: max(5.31vw, 17px);
+  max-height: 3rem;
+
+  &__line {
+    width: 100%;
+    height: max(.63vw, 2px);
+    background-color: #8d8d8d;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: max(.63vw, 2px);
+    background-color: #8d8d8d;
+  }
+
+  &::after {
+    top: 0;
+  }
+
+  &::before {
+    bottom: 0;
   }
 }
 
