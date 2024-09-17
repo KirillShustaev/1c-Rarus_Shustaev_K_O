@@ -556,6 +556,8 @@
 
   & ul {
     justify-content: space-between;
+    max-width: 50rem;
+    margin: 0 auto;
 
     column-gap: 1rem;
   }

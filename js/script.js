@@ -9,15 +9,21 @@ menuLink.forEach(elem => {
     })
 })
 
+let footer = document.querySelector('.footer');
 let menu = document.querySelector('.menu');
 
-window.addEventListener('scroll', () => {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        menu.classList.add('hidden');
-    } else {
-        menu.classList.remove('hidden');
-    }
-});
+const callback = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            menu.classList.add('hidden');
+        } else {
+            menu.classList.remove('hidden');
+        }
+    });
+};
+
+const observer = new IntersectionObserver(callback);
+observer.observe(footer);
 
 let burger = document.querySelector(".burger")
 let catalog = document.querySelector(".catalog")

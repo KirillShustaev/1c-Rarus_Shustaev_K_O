@@ -922,6 +922,8 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .menu ul {
   justify-content: space-between;
+  max-width: 50rem;
+  margin: 0 auto;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
